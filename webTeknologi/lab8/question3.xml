@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="question3.xsl"?>
+<audit campus="Woolloomooloo" year="2000" session="A">
+
+  <subject sid="0769642">
+    <code>MATH101</code>
+    <title>Calculus</title>
+    <statistics>
+      <enrol>170</enrol>
+      <withdrawn>31</withdrawn>
+    </statistics>
+  </subject>
+
+  <subject sid="1734231">
+    <code>MATH234</code>
+    <title>Abstract Algebra</title>
+    <statistics>
+      <enrol>40</enrol>
+      <withdrawn>15</withdrawn>
+    </statistics>
+  </subject>
+
+    <subject sid="8574639">
+    <code>MATH222</code>
+    <title>Deeptract Algebra</title>
+    <statistics>
+      <enrol>70</enrol>
+      <withdrawn>23</withdrawn>
+    </statistics>
+  </subject>
+
+    <subject sid="1029383">
+    <code>MATH241</code>
+    <title>Impossible Algebra</title>
+    <statistics>
+      <enrol>10</enrol>
+      <withdrawn>5</withdrawn>
+    </statistics>
+  </subject>
+
+    <subject sid="7654678">
+    <code>MATH287</code>
+    <title>Hard Math</title>
+    <statistics>
+      <enrol>205</enrol>
+      <withdrawn>200</withdrawn>
+    </statistics>
+  </subject>
+
+    <subject sid="9628574">
+    <code>MATH999</code>
+    <title>Easy Math</title>
+    <statistics>
+      <enrol>800</enrol>
+      <withdrawn>2</withdrawn>
+    </statistics>
+  </subject>
+
+</audit>

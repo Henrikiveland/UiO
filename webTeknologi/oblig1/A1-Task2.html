@@ -1,0 +1,367 @@
+<!--
+
+my sources:
+
+https://www.tourism.australia.com/en/news-and-media/news-stories/best-australian-beaches-campaign-2022.html
+  https://www.tourism.australia.com/content/dam/digital/corporate/documents/best-australian-beaches-2022.pdf
+
+https://www.hellogosti.com/surfgifs
+  https://static.wixstatic.com/media/0a9b83_e6fd817b6a1a4ec8896208a5d2b15847~mv2.gif
+
+All the reviews are from google review.
+
+-->
+
+<html>
+  <head>
+    <title>A1-Task2</title>
+    <style>
+      #beachTable {
+        border-color: rgba(128, 128, 128, 0.25);
+        border-style: solid;
+        border-collapse: separate;
+        border-spacing: 1px 1px;
+        width: 100%;
+      }
+
+      #mainTitle {
+        font-size: 60px;
+        text-align: center;
+        vertical-align: top;
+        color: goldenrod;
+        background-color: #ffd86e;
+        height: 350px;
+        background-image: url(https://static.wixstatic.com/media/0a9b83_e6fd817b6a1a4ec8896208a5d2b15847~mv2.gif); /*Here im using the direct source for the gif, but i have also downloaded it and submittet it with the zip file for task 1.*/
+        /* background-image: url(surf.gif); */
+        background-size: 40% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      #header {
+        font-size: 40px;
+        background-color: coral;
+        height: 80px;
+      }
+
+      #beachTable th {
+        padding: 10px;
+        border-style: solid;
+        border-color: rgba(128, 128, 128, 0.25);
+        border-width: 5px;
+      }
+
+      #beachTable td {
+        padding: 10px;
+        border-style: solid;
+        border-color: rgba(128, 128, 128, 0.25);
+        border-width: 1px;
+        vertical-align: top;
+      }
+
+      .name {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .oddRow {
+        background-color: aqua;
+      }
+
+      .evenRow {
+        background-color: aquamarine;
+      }
+
+      #page {
+        background: linear-gradient(#ffd86e, aqua);
+      }
+
+      .location {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body id="page">
+    <table id="beachTable">
+      <tr>
+        <th id="mainTitle" colspan="4">
+          &#127796;Famous Australian Beaches &#127958;&#65039;
+        </th>
+      </tr>
+      <tr id="header">
+        <th>Name</th>
+        <th>Location</th>
+        <th>Info</th>
+        <th>Comments</th>
+      </tr>
+
+      <tr class="oddRow">
+        <td class="name">1. Misery Beach</td>
+
+        <td class="location">
+          Torndirrup <br />
+          Western Australia
+        </td>
+
+        <td class="info">
+          The location of Australias last active whaling station. It closed in
+          1978.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>
+              "Beautiful beach with stunning granite rock formation surrounding
+              the beach." -Joanne
+            </li>
+            <li>
+              "What a beautiful, sheltered beach! Easy parking and beach
+              access." -Tracey
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="evenRow">
+        <td class="name">2. Horseshoe Bay</td>
+
+        <td class="location">
+          South West Rocks<br />
+          New South Wales
+        </td>
+
+        <td class="info">
+          Here you can climb mountains, go for a rainforest walk and there is
+          also many other great beaches close by.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>
+              "Just a beautiful spot. Water was absolutely fantastic & the food
+              at the kiosk was yum." -Anne
+            </li>
+            <li>
+              "Great kid friendly beach. Waves are good and consistent and the
+              kids can play and learn to body board." -Tim
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="oddRow">
+        <td class="name">3. The Spit</td>
+
+        <td class="location">
+          Gold Coast<br />
+          Queensland
+        </td>
+
+        <td class="info">
+          At the top of The spit there is a wide 670m long pathway, that makes
+          the spectacular view accessible for everyone.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>
+              "This has become a really pretty spot to sit and watch the boats
+              go past." -Tash
+            </li>
+            <li>
+              "Lots of nearby parking and toilets were quite clean (for public
+              toilets)." -Karl
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="evenRow">
+        <td class="name">4. Flaherty’s Beach</td>
+
+        <td class="location">
+          Yorke Peninsula<br />
+          South Australia
+        </td>
+
+        <td class="info">
+          A shallow beach that stretches 800m out into clear water.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>"One of the best beach for young kids specially." -Ashok</li>
+            <li>
+              "One of the most amazing and beautiful beach that I ever seen!"
+              -Fabio
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="oddRow">
+        <td class="name">5. Loch Ard Gorge</td>
+
+        <td class="location">
+          Port Campbell<br />
+          Victoria
+        </td>
+
+        <td class="info">
+          Because of the raging sea and wild waves this is a beautiful beach but
+          unsafe for swimming.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>
+              "Impressive place. You can look at several rock formation and even
+              access the beach and take a bath." -Fabian
+            </li>
+            <li>
+              "A must visit! There are a few stairs but they aren't steep or too
+              many." -Rosita
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="evenRow">
+        <td class="name">6. The Neck</td>
+
+        <td class="location">
+          Bruny Island<br />
+          Tasmania
+        </td>
+
+        <td class="info">
+          The neck provides habitat for fairy penguins and shearwaters.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>
+              "Such a special lookout and highlight on your trip to the island!
+              " -Rob
+            </li>
+            <li>
+              "On a very windswept day this is still a fantastic location to
+              stop and take in the view." -Darren
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="oddRow">
+        <td class="name">7. Blue Pearl Bay</td>
+
+        <td class="location">
+          Whitsundays<br />
+          Queensland
+        </td>
+
+        <td class="info">
+          Blue Pearl Bay is one of only four or maybe five beaches on Hayman
+          Island’s 8.5 km coast.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>
+              "Such a fabulous place to snorkel. The coral and fish are just
+              amazing." -Melanie
+            </li>
+            <li>"Beautiful place to relax and snorkel, or dive." -Mario</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="evenRow">
+        <td class="name">8. Depot Beach</td>
+
+        <td class="location">
+          South Coast<br />
+          New South Wales
+        </td>
+
+        <td class="info">
+          Depot Beach’s many charms include a quaint two street village, simple
+          cabins and beachside camping, a coastal rainforest walk and a sublime
+          stretch of beach for swimming, fishing and great snorkelling amid the
+          rocks.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>
+              "Awesome beach for swimming. A bit of a shore dump when we
+              visited, but so warm!" -Sierra
+            </li>
+            <li>"This must be the best beach on the south coast." -Adam</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="oddRow">
+        <td class="name">9. Murrays Beach</td>
+
+        <td class="location">
+          Jervis Bay Territory<br />
+          Australian Capital Territory
+        </td>
+
+        <td class="info">
+          In the late 60s this coast was to become a major industrial hub
+          complete with steelworks and australia's first nuclear power plant to
+          generate weapons grade plutonium, under a Commonwealth directive.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>
+              "Great spot to swim or snorkel. Really nice white sands." -Peter
+            </li>
+            <li>
+              "A nice, small hidden away beach in Jervis Bay. Very beautiful."
+              -Jonas
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="evenRow">
+        <td class="name">10. Dundee Beach</td>
+
+        <td class="location">
+          Darwin<br />
+          Northern Territory
+        </td>
+
+        <td class="info">
+          It's called Dundee, and yes, the name is derived from the hit movie,
+          and it's home to some pretty big crocs.
+        </td>
+
+        <td class="comments">
+          <ul>
+            <li>
+              "Great place for relaxing and getting away from it all even if we
+              didn’t catch any fish." -Stephen
+            </li>
+            <li>
+              "Love this place, great to take the dogs for walk on the Beach and
+              the Sunsets are Amazing." -Yvonne
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <p>
+      My extra CSS property is <b>background-image</b> . Since i'm using
+      background-image, i'm also using background-size, background-repeat and
+      background-position. My background-image is a gif and is used in the title
+      cell of the table.
+    </p>
+  </body>
+</html>

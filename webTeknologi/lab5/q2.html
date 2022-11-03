@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Question 2</title>
+    <script>
+      function check() {
+        console.log("Check pressed");
+        var value1 = document.getElementById("value1");
+        var operation = document.getElementById("operation");
+        var value2 = document.getElementById("value2");
+        var typedAnswer = document.getElementById("typedAnswer");
+        console.log(value1.value);
+        console.log(operation);
+        console.log(value2.value);
+
+        if (operation.value == "add") {
+          console.log("operation is +");
+          if (Number(value1.value) + Number(value2.value) == Number(typedAnswer.value)) {
+            spanOutput(true);
+            console.log("Correct answer");
+          } else {
+            spanOutput(false);
+          }
+        } else if (operation.value == "subtract") {
+          console.log("operation is -");
+          if (Number(value1.value) - Number(value2.value) == Number(typedAnswer.value)) {
+            spanOutput(true);
+          } else {
+            spanOutput(false);
+          }
+        } else if (operation.value == "multiply") {
+          console.log("operation is *");
+          if (Number(value1.value) * Number(value2.value) == Number(typedAnswer.value)) {
+            spanOutput(true);
+          } else {
+            spanOutput(false);
+          }
+        }
+      }
+      function spanOutput(correct) {
+        var output = document.getElementById("output");
+        if (correct == true) {
+          output.innerHTML = "Correct!";
+        } else {
+          output.innerHTML = "Incorrect, please try again.";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="value1" />
+
+    <select id="operation">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">x</option>
+    </select>
+
+    <input type="text" id="value2" />
+    =
+    <input type="text" id="typedAnswer" />
+    <button onclick="check()">Check</button>
+    <span id="output"></span>
+  </body>
+</html>

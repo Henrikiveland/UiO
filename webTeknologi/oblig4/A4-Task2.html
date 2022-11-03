@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Task 2</title>
+    <script>
+      function readJSON() {
+        var xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function () {
+          readyStateChangeHandler(xhttp);
+        };
+        xhttp.open("GET", "A4-Task1.json", true);
+        xhttp.send();
+      }
+      function readyStateChangeHandler(xhttp) {
+        if (xhttp.readyState == 4) {
+          if (xhttp.status == 200) {
+            handleStatusSuccess(xhttp);
+          } else {
+            handleStatusFailure(xhttp);
+          }
+        }
+      }
+
+      function handleStatusFailure(xhttp) {
+        alert("XMLHttpRequest failed: status " + xhttp.status);
+      }
+
+      function handleStatusSuccess(xhttp) {
+        var jsonText = xhttp.responseText;
+
+        var infoObj = JSON.parse(jsonText);
+        displayInfo(infoObj);
+      }
+
+      function displayInfo(infoObj) {
+        var display = document.getElementById("display");
+        var html = "<b>Organisations Register</b> ";
+        html += "<br/><i>list is updated as of: </i>" + infoObj.date;
+        var org;
+        for (var i = 0; i < infoObj.organisationsRegister.length; i++) {
+          org = infoObj.organisationsRegister[i];
+          html += "<hr><br/>";
+          html +=
+            "for the organisation <b><u>" +
+            org.name +
+            "</u></b>, located at:<i> " +
+            org.adress +
+            "</i>";
+          html += "<br/> currently available services are:<br/><br/>";
+          for (var j = 0; j < org.avaliableServices.length; j++) {
+            service = org.avaliableServices[j];
+            html +=
+              j +
+              1 +
+              ". on " +
+              service.days +
+              " --> <b>" +
+              service.serviceName +
+              "</b>, cost: " +
+              service.cost +
+              "<br/><br/>";
+          }
+        }
+
+        display.innerHTML = html;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="readJSON()">Read JSON</button>
+    <br />
+    <br />
+    <div id="display"></div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Question 4</title>
+    <script>
+      var counter = 0;
+      var counterSetup;
+      var hasStarted = false;
+      function counterAnimation(start) {
+        if (start == true && hasStarted == false) {
+          counterSetup = setInterval(increaseCounter, 500);
+          hasStarted = true;
+        } else if (start == false && hasStarted == true) {
+          clearInterval(counterSetup);
+          hasStarted = false;
+        }
+      }
+      function increaseCounter() {
+        var output = document.getElementById("counter");
+        counter++;
+        output.innerHTML = counter;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="counterAnimation(true)">Start counter animation</button>
+    <button onclick="counterAnimation(false)">Stop counter animation</button>
+    <br />
+    <span id="counter">0</span>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Question 1</title>
+    <script>
+      var number = getRandomNumber();
+      var multiplier;
+      var animationSetup;
+      var hasStarted = false;
+      var output;
+      function getRandomEmoji() {
+        emoji = [
+          "&#128507;",
+          "&#128508;",
+          "&#128509;",
+          "&#128510;",
+          "&#128511;",
+          "&#128512;",
+          "&#128513;",
+          "&#128514;",
+          "&#128515;",
+          "&#128516;",
+          "&#8986;",
+          "&#8987;",
+          "&#9748;",
+          "&#9749;",
+          "&#9823;",
+          "&#9917;",
+          "&#9924;",
+          "&#9977;",
+          "&#9996;",
+          "&#11088;",
+          "&#127772;",
+          "&#127774;",
+        ];
+
+        const ranEmoji = emoji[Math.floor(Math.random() * emoji.length)];
+        return ranEmoji;
+      }
+
+      function getRandomNumber() {
+        ranNum = Math.floor(Math.random() * 100);
+        if (ranNum < 10) {
+          ranNum = getRandomNumber();
+        }
+        return ranNum;
+      }
+
+      function display() {
+        output = document.getElementById("output");
+        var emoji1 = getRandomEmoji();
+        var emoji2 = getRandomEmoji();
+        oldNumber = number;
+        newNumber = number * multiplier;
+        output.innerHTML =
+          output.innerHTML +
+          "<br />" +
+          emoji1 +
+          oldNumber +
+          "*" +
+          multiplier +
+          "=" +
+          newNumber +
+          emoji2;
+        number = newNumber;
+      }
+
+      function mulAnimation(start) {
+        input = document.getElementById("input");
+        multiplier = input.value;
+        output = document.getElementById("output");
+        if (start == true && hasStarted == false) {
+          output.innerHTML = "";
+          display();
+          animationSetup = setInterval(display, 1500);
+          hasStarted = true;
+        } else if (start == false && hasStarted == true) {
+          clearInterval(animationSetup);
+          input.value = "";
+          number = getRandomNumber();
+          hasStarted = false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Multiplier: <input type="text" id="input" />
+    <br />
+    <br />
+    <button onclick="mulAnimation(true)">Start</button>
+    <button onclick="mulAnimation(false)">Stop</button>
+    <br />
+    <br />
+    <span id="output"></span>
+  </body>
+</html>

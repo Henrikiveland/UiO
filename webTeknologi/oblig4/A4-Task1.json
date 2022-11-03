@@ -1,0 +1,63 @@
+{
+  "date": "20/9/2022",
+  "organisationsRegister": [
+    {
+      "name": "NGO Free Spirit",
+      "adress": "89 Crwon Street, Wollongong",
+      "avaliableServices": [
+        {
+          "serviceName": "Parents workshops",
+          "days": "Thursdays",
+          "cost": "$10"
+        },
+        {
+          "serviceName": "Children playgroups",
+          "days": "Friday",
+          "cost": "$5"
+        },
+        {
+          "serviceName": "Youth Counselling",
+          "days": "Wednesday, Friday",
+          "cost": "Free"
+        }
+      ]
+    },
+    {
+      "name": "Southern Friends",
+      "adress": "123 Baan Baan st, Dapto",
+      "avaliableServices": [
+        {
+          "serviceName": "Visual art",
+          "days": "Monday",
+          "cost": "free"
+        },
+        {
+          "serviceName": "Singing together",
+          "days": "Tuesday",
+          "cost": "$15"
+        },
+        {
+          "serviceName": "My music workshop",
+          "days": "Tuesday, Wednesday",
+          "cost": "$20"
+        }
+      ]
+    },
+    {
+      "name": "Neighbourhood Clinic",
+      "adress": "5/56 Elizabeth Ave, Liverpool",
+      "avaliableServices": [
+        {
+          "serviceName": "Health check",
+          "days": "Thursdays",
+          "cost": "$10"
+        },
+        {
+          "serviceName": "Blood test",
+          "days": "Thursdays",
+          "cost": "$12"
+        }
+      ]
+    }
+  ]
+}

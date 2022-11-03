@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      #output {
+        color: blue;
+        font-size: 30px;
+      }
+    </style>
+    <script>
+      var oldNumber;
+      function mul10() {
+        var text = document.getElementById("input");
+        var output = document.getElementById("output");
+        var newNumber = oldNumber * 10;
+        output.innerHTML = text.value + " " + newNumber;
+        oldNumber = newNumber;
+      }
+      function div10() {
+        var text = document.getElementById("input");
+        var output = document.getElementById("output");
+        var newNumber = oldNumber / 10;
+        output.innerHTML = text.value + " " + newNumber;
+        oldNumber = newNumber;
+      }
+      function reset() {
+        genRandomNumber();
+        var text = document.getElementById("input");
+        text.value = "";
+      }
+      function genRandomNumber() {
+        var output = document.getElementById("output");
+        oldNumber = Math.floor(Math.random() * 1000);
+        output.innerHTML = oldNumber;
+      }
+    </script>
+  </head>
+  <body onload="genRandomNumber()">
+    <button onclick="mul10()">Multiply by 10</button>
+    <button onclick="div10()">Divide by 10</button>
+    <button onclick="reset()">Reset</button>
+    <input type="text" id="input" />
+    <br />
+    <span id="output"></span>
+  </body>
+</html>

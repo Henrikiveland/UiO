@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>MyAppointment</title>
+    <style>
+      #title {
+        font-size: 40px;
+      }
+      #page {
+        background-color: rgba(58, 154, 154, 0.6);
+      }
+      #webform {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        border-color: rgba(128, 128, 128, 0.25);
+        border-style: solid;
+        border-collapse: collapse;
+        background-color: rgba(58, 154, 154, 0.6);
+      }
+      #webform tr {
+        border-color: rgba(128, 128, 128, 0.25);
+        border-style: solid;
+        /* border-spacing: 1px 1px; */
+      }
+    </style>
+  </head>
+  <body id="page">
+    <form action="http://myAppo.com.au/query" method="get">
+      <table id="webform">
+        <tr>
+          <th colspan="2" id="title">&#129463;MyAppointment&#129463;</th>
+        </tr>
+        <tr>
+          <td>
+            Best Wollongong <br />
+            Perfect Smile Liverpool <br />
+            One Dentist Shellharbour
+          </td>
+          <td>
+            <input type="radio" name="dentist" value="woll" /><br />
+            <input type="radio" name="dentist" value="liv" /><br />
+            <input type="radio" name="dentist" value="shell" />
+          </td>
+        </tr>
+        <tr>
+          <td>Name:</td>
+          <td>
+            <input type="text" name="name" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Phone:</td>
+          <td>
+            <input type="text" name="phone" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Email:</td>
+          <td>
+            <input type="text" name="email" />
+          </td>
+        </tr>
+        <tr>
+          <td>Prefered time:</td>
+          <td>
+            <select name="time">
+              <option value="1">9-10 am</option>
+              <option value="2">10-11 am</option>
+              <option value="3">12-1 pm</option>
+              <option value="4">1-2 pm</option>
+              <option value="5">2-3 pm</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Additional information:</td>
+          <td>
+            <textarea name="note" cols="20" rows="2"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Reminder:</td>
+          <td>
+            <input type="checkbox" name="reminder" value="SMS" />SMS
+            <input type="checkbox" name="reminder" value="EM" />Email
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

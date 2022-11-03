@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="organisationsRegister">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="organisation" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="orgName" type="xsd:string" />
+                            <xsd:element name="avaliableServices" type="xsd:string" />
+                            <xsd:element name="days" type="xsd:string" />
+                            <xsd:element name="cost" type="xsd:string" />
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="date" type="xsd:string" />
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

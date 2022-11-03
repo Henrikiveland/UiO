@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Question 1</title>
+    <script>
+      function show() {
+        var output = document.getElementById("output");
+        var sub1 = document.getElementById("sub1");
+        var sub2 = document.getElementById("sub2");
+        var sub3 = document.getElementById("sub3");
+        var sub4 = document.getElementById("sub4");
+        output.innerHTML =
+          "You have selected " +
+          sub1.value +
+          ", " +
+          sub2.value +
+          ", " +
+          sub3.value +
+          " and " +
+          sub4.value;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Please select 4 subjects</p>
+    <br />
+    <span>Subject 1: </span> <input type="text" id="sub1" />
+    <br />
+    <span>Subject 2: </span> <input type="text" id="sub2" />
+    <br />
+    <span>Subject 3: </span> <input type="text" id="sub3" />
+    <br />
+    <span>Subject 4: </span> <input type="text" id="sub4" />
+    <br />
+    <br />
+    <button onclick="show()">Show Selection</button>
+    <br />
+    <br />
+    <span id="output"></span>
+  </body>
+</html>

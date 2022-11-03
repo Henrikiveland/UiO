@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="yes" ?>
+<!DOCTYPE organisationsRegister [
+    <!ELEMENT organisationsRegister (organisation*)>
+    <!ATTLIST organisationsRegister date CDATA #REQUIRED>
+    <!Element organisation (orgName, avaliableServices, days, cost)>
+    <!Element orgName(#PCDATA)>
+    <!Element avaliableServices(#PCDATA)>
+    <!Element days(#PCDATA)>
+    <!Element cost(#PCDATA)>
+]>
+
+<organisationsRegister date="09/09/2022">
+    <organisation>
+        <orgName>NGO Free Spirit</orgName>
+        <avaliableServices>Parents workshops</avaliableServices>
+        <days>Thursdays</days>
+        <cost>$10</cost>
+    </organisation>
+
+    <organisation>
+        <orgName>NGO Free Spirit</orgName>
+        <avaliableServices>Children playgroups</avaliableServices>
+        <days>Friday</days>
+        <cost>$5</cost>
+    </organisation>
+
+    <organisation>
+        <orgName>NGO Free Spirit</orgName>
+        <avaliableServices>Youth Counselling</avaliableServices>
+        <days>Wednesday, Friday</days>
+        <cost>Free</cost>
+    </organisation>
+
+    <organisation>
+        <orgName>Southern Friends</orgName>
+        <avaliableServices>Visual art</avaliableServices>
+        <days>Monday</days>
+        <cost>free</cost>
+    </organisation>
+
+    <organisation>
+        <orgName>Southern Friends</orgName>
+        <avaliableServices>Singing together</avaliableServices>
+        <days>Tuesday</days>
+        <cost>$15</cost>
+    </organisation>
+
+    <organisation>
+        <orgName>Southern Friends</orgName>
+        <avaliableServices>My music workshop</avaliableServices>
+        <days>Tuesday, Wednesday</days>
+        <cost>$20</cost>
+    </organisation>
+
+    <organisation>
+        <orgName>Neighbourhood Clinic</orgName>
+        <avaliableServices>Health check</avaliableServices>
+        <days>Thursdays</days>
+        <cost>$10</cost>
+    </organisation>
+
+    <organisation>
+        <orgName>Neighbourhood Clinic</orgName>
+        <avaliableServices>Blood test</avaliableServices>
+        <days>Thursdays</days>
+        <cost>$12</cost>
+    </organisation>
+
+   
+</organisationsRegister>
