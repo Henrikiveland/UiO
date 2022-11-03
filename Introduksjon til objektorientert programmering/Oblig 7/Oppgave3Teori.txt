@@ -1,0 +1,10 @@
+Oppgave 3 Teorispørsmål
+
+a) pdf bilde fil
+
+b) Velger en liste framfor en ordbok, fordi hvis det er en ordbok så må man ha en egen unik nøkkelverdi til hver
+verdi, noe som kan bli litt vanskelig. Hvis det er en liste så holder det å legge inn sang-objektene uten en
+nøkkel-variabel knytta til obkjektet.
+
+c) Hvis man har filnavnet som en parameter i konstrukteren må man lage et nytt spillelisteobjekt for hver fil man har.
+Sånn som oppgaven er nå så kan man legge til flere filer med sanger i samme spilleliste.

@@ -1,0 +1,10 @@
+Oppgave 2: Teorioppgave
+
+1.  Innkapsling er et prinsipp som innebærer at programmerere bare
+    har tilgang på klassens grensesnitt, ikke kan tulle med koden ellers.
+    Det er nyttig fordi da kan ikke andre tukle med klassens kode.
+
+2.  Grensesnittet til en klasse er alt det programmerere som bruker klassen
+    har tilgang på og kan se. Implementasjon er inneholde i klassen.
+
+3.  En instantsvariabel et et obkjekt i klassen.
